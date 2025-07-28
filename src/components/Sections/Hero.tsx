@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 const Hero = () => {
   const stats = [
     { icon: Zap, label: '10x Productivity', value: 'Boost' },
-    { icon: Target, label: 'Accuracy Rate', value: '99%' },
+    { icon: Target, label: 'Accuracy Rate', value: '98%' },
     { icon: TrendingUp, label: 'Cost Reduction', value: '60%' },
   ];
 
@@ -74,10 +74,6 @@ const Hero = () => {
                 Let's Automate
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
-            </Button>
-            <Button variant="heroOutline" size="xl" className="group">
-              <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
-              Watch Demo
             </Button>
           </div>
 

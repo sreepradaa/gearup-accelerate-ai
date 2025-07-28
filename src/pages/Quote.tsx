@@ -70,9 +70,7 @@ const Quote = () => {
     'Free consultation & automation audit',
     'Custom AI solution roadmap',
     'No upfront costs for evaluation',
-    'Implementation within 2 weeks',
-    'Dedicated project manager',
-    '30-day money-back guarantee'
+    'Implementation within 2 weeks'
   ];
 
   return (
@@ -94,7 +92,7 @@ const Quote = () => {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Get Your{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-neon">Custom Quote</span>
+              <span className="text-transparent bg-clip-text bg-gradient-neon">Custom Proposal</span>
             </h1>
             <p className="text-xl max-w-3xl mx-auto text-gearup-light-gray">
               Tell us about your business challenges and automation goals. 
@@ -208,34 +206,6 @@ const Quote = () => {
                         />
                       </div>
 
-                      {/* Budget */}
-                      <div>
-                        <Label className="text-base font-medium text-gearup-navy mb-3 block">
-                          Budget Range (Optional)
-                        </Label>
-                        <RadioGroup
-                          value={formData.budget}
-                          onValueChange={(value) => setFormData(prev => ({ ...prev, budget: value }))}
-                          className="grid grid-cols-1 md:grid-cols-2 gap-3"
-                        >
-                          <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="under-5k" id="under-5k" />
-                            <Label htmlFor="under-5k">Under $5,000</Label>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="5k-15k" id="5k-15k" />
-                            <Label htmlFor="5k-15k">$5,000 - $15,000</Label>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="15k-30k" id="15k-30k" />
-                            <Label htmlFor="15k-30k">$15,000 - $30,000</Label>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="over-30k" id="over-30k" />
-                            <Label htmlFor="over-30k">Over $30,000</Label>
-                          </div>
-                        </RadioGroup>
-                      </div>
 
                       {/* Timeline */}
                       <div>

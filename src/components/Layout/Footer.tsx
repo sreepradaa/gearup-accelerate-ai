@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Zap, Mail, MapPin, Phone, Linkedin, Twitter } from 'lucide-react';
+import { Zap, Mail, MapPin, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -22,18 +22,11 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <motion.a
-                href="#"
+                href="https://linkedin.com/company/gearupagency"
                 whileHover={{ scale: 1.1 }}
                 className="w-10 h-10 bg-gearup-dark rounded-lg flex items-center justify-center hover:bg-gearup-neon hover:text-gearup-navy transition-colors duration-300"
               >
                 <Linkedin className="w-5 h-5" />
-              </motion.a>
-              <motion.a
-                href="#"
-                whileHover={{ scale: 1.1 }}
-                className="w-10 h-10 bg-gearup-dark rounded-lg flex items-center justify-center hover:bg-gearup-neon hover:text-gearup-navy transition-colors duration-300"
-              >
-                <Twitter className="w-5 h-5" />
               </motion.a>
             </div>
           </div>
@@ -61,15 +54,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-gearup-neon" />
-                <span className="text-gearup-light-gray">hello@gearup.ai</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <Phone className="w-4 h-4 text-gearup-neon" />
-                <span className="text-gearup-light-gray">+1 (555) 123-4567</span>
+                <span className="text-gearup-light-gray">getgearup.agency@gmail.com</span>
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4 text-gearup-neon" />
-                <span className="text-gearup-light-gray">San Francisco, CA</span>
+                <span className="text-gearup-light-gray">Hyderabad, Telangana</span>
               </li>
             </ul>
           </div>
@@ -77,7 +66,7 @@ const Footer = () => {
 
         <div className="border-t border-gearup-dark mt-8 pt-8 text-center">
           <p className="text-gearup-light-gray">
-            © 2024 GearUp AI Automation Agency. All rights reserved.
+            © 2025 GearUp AI Automation Agency. All rights reserved.
           </p>
         </div>
       </div>
