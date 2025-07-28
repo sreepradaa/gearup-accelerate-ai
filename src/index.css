@@ -8,35 +8,61 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* GearUp Brand Colors - Navy Blue, Neon Green, White */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 65% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 65% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 65% 9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Navy Blue (#0A192F) */
+    --primary: 210 65% 9%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Neon Green (#64ffda) */
+    --secondary: 167 100% 70%;
+    --secondary-foreground: 210 65% 9%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 210 20% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent: Neon Green variant */
+    --accent: 167 100% 70%;
+    --accent-foreground: 210 65% 9%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20% 90%;
+    --input: 210 20% 95%;
+    --ring: 167 100% 70%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom GearUp Design Tokens */
+    --gearup-navy: 210 65% 9%;
+    --gearup-neon: 167 100% 70%;
+    --gearup-neon-dark: 167 100% 60%;
+    --gearup-dark: 210 40% 6%;
+    --gearup-gray: 210 20% 45%;
+    --gearup-light-gray: 210 20% 96%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--gearup-navy)), hsl(var(--gearup-dark)));
+    --gradient-neon: linear-gradient(135deg, hsl(var(--gearup-neon)), hsl(var(--gearup-neon-dark)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--gearup-light-gray)));
+
+    /* Shadows */
+    --shadow-glow: 0 0 30px hsl(var(--gearup-neon) / 0.3);
+    --shadow-elegant: 0 10px 40px -10px hsl(var(--gearup-navy) / 0.2);
+    --shadow-card: 0 4px 20px -2px hsl(var(--gearup-navy) / 0.1);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
