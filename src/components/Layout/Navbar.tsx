@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import gearupLogo from '@/assets/gearup-logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,10 +37,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 bg-gradient-neon rounded-lg flex items-center justify-center group-hover:shadow-glow transition-all duration-300">
-              <Zap className="w-6 h-6 text-gearup-navy" />
-            </div>
+          <Link to="/" className="flex items-center space-x-3 group">
+            <img 
+              src={gearupLogo} 
+              alt="GearUp" 
+              className="w-10 h-10 group-hover:scale-110 transition-transform duration-300" 
+            />
             <span className="text-2xl font-bold text-gearup-navy">GearUp</span>
           </Link>
 

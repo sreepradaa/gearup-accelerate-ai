@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Play, Zap, Target, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
   const stats = [
@@ -13,16 +12,9 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="AI Automation Background"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-gearup-navy/90 via-gearup-navy/70 to-transparent" />
-      </div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gearup-dark">
+      {/* Simple Dark Background with Gradient */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-gearup-navy via-gearup-dark to-gearup-navy" />
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
